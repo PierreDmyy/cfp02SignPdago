@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pdf-sign/static/css/main.4856d234.css",
+    "main.js": "/pdf-sign/static/js/main.4f21c0c2.js",
+    "static/js/377.cf35f470.chunk.js": "/pdf-sign/static/js/377.cf35f470.chunk.js",
+    "index.html": "/pdf-sign/index.html",
+    "main.4856d234.css.map": "/pdf-sign/static/css/main.4856d234.css.map",
+    "main.4f21c0c2.js.map": "/pdf-sign/static/js/main.4f21c0c2.js.map",
+    "377.cf35f470.chunk.js.map": "/pdf-sign/static/js/377.cf35f470.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4856d234.css",
+    "static/js/main.4f21c0c2.js"
+  ]
+}
