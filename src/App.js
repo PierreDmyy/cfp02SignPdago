@@ -80,6 +80,7 @@ function App() {
             }}
           />
         ) : null}
+
         {pdf ? (
           <div>
             <div style={styles.controls}>
