@@ -4,7 +4,7 @@ import React from "react";
 export function ConfirmOrCancel({
   onCancel,
   onConfirm,
-  confirmTitle = "Confirm",
+  confirmTitle = "Valider",
   leftBlock,
   hideCancel,
   disabled
@@ -25,7 +25,7 @@ export function ConfirmOrCancel({
       <div>
         {!hideCancel ? (
           <BigButton
-            title={"Cancel"}
+            title={"Annuler"}
             style={styles.cancel}
             onClick={onCancel}
           />

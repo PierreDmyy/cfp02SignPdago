@@ -1,4 +1,5 @@
 import Draggable from "react-draggable";
+
 import {BigButton} from "./BigButton"; // The default
 import {FaCheck, FaTimes} from 'react-icons/fa'
 import {cleanBorder, errorColor, goodColor, primary45} from "../utils/colors";
@@ -27,11 +28,12 @@ export default function DraggableSignature({ url, onEnd, onSet, onCancel }) {
     <Draggable onStop={onEnd}>
       <div style={styles.container}>
         <div style={styles.controls}>
-          <div style={styles.smallButton} onClick={onSet}><FaCheck color={goodColor}/></div>
-          <div style={styles.smallButton} onClick={onCancel}><FaTimes color={errorColor}/></div>
+          <button style={styles.smallbutton} onClick ={onSet}><FaCheck color={goodColor}/></button>
+          <button style={styles.smallbutton} onClick ={onCancel}><FaTimes color={errorColor}/></button>
         </div>
         <img src={url} width={200} style={styles.img} draggable={false} />
       </div>
     </Draggable>
+    
   );
 }

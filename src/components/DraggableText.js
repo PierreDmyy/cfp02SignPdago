@@ -4,7 +4,7 @@ import { cleanBorder, errorColor, goodColor, primary45 } from "../utils/colors";
 import { useState, useEffect, useRef } from "react";
 
 export default function DraggableText({ onEnd, onSet, onCancel, initialText }) {
-  const [text, setText] = useState("Text");
+  const [text, setText] = useState("Texte");
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function DraggableText({ onEnd, onSet, onCancel, initialText }) {
     },
     smallButton: {
       display: "inline-block",
-      cursor: "pointer",
+      cursor: "pointer!important",
       padding: 4,
     },
     input: {

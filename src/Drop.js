@@ -31,7 +31,7 @@ export default function Drop({ onLoaded }) {
   return (
     <div {...getRootProps()} style={styles.container}>
       <input {...getInputProps()} />
-      {isDragActive ? <p>Drop a PDF here</p> : <p>Drag a PDF here</p>}
+      {isDragActive ? <p>Déposer le PDF ici</p> : <p>Sélectionner ou déposer le contrat pédagogique</p>}
     </div>
   );
 }

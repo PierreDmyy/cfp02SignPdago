@@ -10,6 +10,6 @@ export function Header() {
     }
   }
   return <div style={styles.container}>
-    <div>Open PDF Sign</div>
+    <div>CFP02Sign</div>
   </div>
 }

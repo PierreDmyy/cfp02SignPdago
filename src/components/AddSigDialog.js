@@ -33,7 +33,7 @@ export function AddSigDialog({ onConfirm, onClose, autoDate, setAutoDate }) {
   return (
     <Dialog
       isVisible={true}
-      title={"Add signature"}
+      title={"Ajouter une signature"}
       body={
         <div style={styles.container}>
           <div style={styles.sigContainer}>
@@ -52,14 +52,14 @@ export function AddSigDialog({ onConfirm, onClose, autoDate, setAutoDate }) {
           <div style={styles.instructionsContainer}>
             <div style={styles.instructions}>
               <div>
-                Auto date/time{" "}
+                Signature avec date et heure{" "}
                 <input
                   type={"checkbox"}
                   checked={autoDate}
                   onChange={(e) => setAutoDate(e.target.checked)}
                 />
               </div>
-              <div>Draw your signature above</div>
+              <div>Dessinez votre signature ci-dessus</div>
             </div>
           </div>
 

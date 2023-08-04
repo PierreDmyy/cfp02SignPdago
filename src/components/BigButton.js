@@ -58,7 +58,7 @@ export function BigButton({
       fontSize: small ? 14 : null,
       border: `1px solid ${fillColor}`,
       cursor: !disabled ? "pointer" : null,
-      userSelect: "none",
+    
       boxSizing: "border-box",
       marginRight,
     },

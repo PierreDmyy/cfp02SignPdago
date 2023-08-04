@@ -86,25 +86,25 @@ function App() {
               {!signatureURL ? (
                 <BigButton
                   marginRight={8}
-                  title={"Add signature"}
+                  title={"Ajouter une signature"}
                   onClick={() => setSignatureDialogVisible(true)}
                 />
               ) : null}
 
               <BigButton
                 marginRight={8}
-                title={"Add Date"}
+                title={"Ajouter une date"}
                 onClick={() => setTextInputVisible("date")}
               />
 
               <BigButton
                 marginRight={8}
-                title={"Add Text"}
+                title={"Ajouter un texte"}
                 onClick={() => setTextInputVisible(true)}
               />
               <BigButton
                 marginRight={8}
-                title={"Reset"}
+                title={"Réinitialiser"}
                 onClick={() => {
                   setTextInputVisible(false);
                   setSignatureDialogVisible(false);
@@ -118,8 +118,9 @@ function App() {
               {pdf ? (
                 <BigButton
                   marginRight={8}
+                  marginTop={50}
                   inverted={true}
-                  title={"Download"}
+                  title={"Télécharger le contrat"}
                   onClick={() => {
                     downloadURI(pdf, "file.pdf");
                   }}
@@ -131,7 +132,7 @@ function App() {
                 <DraggableText
                   initialText={
                     textInputVisible === "date"
-                      ? dayjs().format("M/d/YYYY")
+                      ? dayjs().format("DD/MM/YYYY")
                       : null
                   }
                   onCancel={() => setTextInputVisible(false)}
@@ -213,7 +214,7 @@ function App() {
                     const firstPage = pages[pageNum];
 
                     const pngImage = await pdfDoc.embedPng(signatureURL);
-                    const pngDims = pngImage.scale( scale * .3);
+                    const pngDims = pngImage.scale(scale * .3);
 
                     firstPage.drawImage(pngImage, {
                       x: newX,
@@ -224,8 +225,8 @@ function App() {
 
                     if (autoDate) {
                       firstPage.drawText(
-                        `Signed ${dayjs().format(
-                          "M/d/YYYY HH:mm:ss ZZ"
+                        `Signé électroniquement le : ${dayjs().format(
+                          "DD/MM/YYYY à HH:mm:ss"
                         )}`,
                         {
                           x: newX,
