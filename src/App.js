@@ -205,9 +205,9 @@ function App() {
 
                     // new XY in relation to actual document size
                     const newY =
-                      (y * originalHeight) / documentRef.current.clientHeight;
+                      (y * originalHeight) / documentRef.current.clientHeight + 0;
                     const newX =
-                      (x * originalWidth) / documentRef.current.clientWidth;
+                      (x * originalWidth) / documentRef.current.clientWidth + 60;
 
                     const pdfDoc = await PDFDocument.load(pdf);
 

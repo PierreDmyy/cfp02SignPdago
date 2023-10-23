@@ -24,11 +24,6 @@ export default function DraggableSignature({ url, onEnd, onSet, onCancel }) {
       <div style={styles.container}>
         <div style={styles.controls}>
           <Button onClick={() => onSet()}><FaCheck color={goodColor}/></Button>
-
-          
-
-
-
           <Button onClick={onCancel}><FaTimes color={errorColor}/></Button>
         </div>
         <img src={url} width={200} style={styles.img} draggable={false} />
